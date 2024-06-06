@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="umn.ac.id.uasbangaumedic">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE " />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/medic"
+        android:label="UMN Medical Center"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TugasAkhir"
+        tools:targetApi="31">
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.SyaratDanKetentuan"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.ViewJob"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.MemberSchedule"
+            android:parentActivityName="umn.ac.id.uasbangaumedic.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="umn.ac.id.uasbangaumedic.MainActivity" />
+        </activity>
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.DetailJob"
+            android:parentActivityName="umn.ac.id.uasbangaumedic.HomeAdmin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="umn.ac.id.uasbangaumedic.HomeAdmin" />
+        </activity>
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.DetailRequest"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.RequestForm"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.ViewRequest"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.AboutUs"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.EmergencyCall"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.Profile"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.HomeAdmin"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.HomeUser"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.LoginPage"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.uasbangaumedic.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

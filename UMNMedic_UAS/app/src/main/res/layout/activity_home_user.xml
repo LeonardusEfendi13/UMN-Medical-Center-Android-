@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeUser"
+    android:background="@drawable/gradient_bg">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="270dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    android:backgroundTint="#E1E1E1">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:id="@+id/requestHelp"
+                            android:layout_width="90dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/requesthelp" />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text="Request Help"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:id="@+id/viewRequest"
+                            android:layout_width="90dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/viewrequest"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="View Request"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="120dp">
+                        <ImageView
+                            android:id="@+id/SnK"
+                            android:layout_width="90dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/syaratketentuan" />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp"
+                            android:text="Syarat &amp;\n Ketentuan"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="120dp">
+                        <ImageView
+                            android:id="@+id/aboutUs"
+                            android:layout_width="90dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/medic"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="About Us"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#E60000"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/emergencyCall"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/emergencycall"></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Emergency Call"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

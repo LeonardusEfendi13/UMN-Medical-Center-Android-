@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146107557029",
+    "project_id": "medicumn-6edd8",
+    "storage_bucket": "medicumn-6edd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146107557029:android:39c4bc86df0b6648b1994c",
+        "android_client_info": {
+          "package_name": "umn.ac.id.uasbangaumedic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146107557029-os308lso6aq78r6odlhdkb7t8eted904.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGy-JDXQ0afxuEcdwyfFHsgkwkdOPMEro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146107557029-os308lso6aq78r6odlhdkb7t8eted904.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

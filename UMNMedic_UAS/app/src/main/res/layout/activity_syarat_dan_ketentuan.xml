@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SyaratDanKetentuan"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="A. Pengajuan Jasa Medis"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/black"
+                            android:justificationMode="inter_word"
+                            android:text="1. Wajib mengadakan technical meeting antara pengaju dan utusan dari Medic maksimal H-7 sebelum acara berlangsung.\n\n2. Anggota Medic wajib mendapatkan konsumsi yang layak apabila pengaju membutuhkan jasa medic selama empat jam atau lebih. Jumlah konsumsi disesuaikan dengan tenaga medis yang diajukan.\n\n3. Anggota Medic wajib diperlakukan dengan baik sesuai dengan aturan serta norma yang berlaku. Jika ditemukan perlakukan tidak baik terhadap anggota Medic, maka Medic berhak memberikan sanksi dengan yang terberat adalah menarik anggota dari pengajuan jasa dan blacklist acara.">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="B. Pengajuan Alat Kesehatan &amp; Obat-Obatan"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/black"
+                            android:justificationMode="inter_word"
+                            android:text="1. Alat kesehatan yang dipinjam HARUS dijaga dan dikembalikan dengan keadaan serupa. Apabila alat kesehatan yang dipinjam hilang atau rusak maka pihak pengaju bersedia mengganti dengan barang yang sama.\n\n2. Apabila pihak pengaju melakukan kesalahan yang sama lebih dari dua kali, maka pihak UMN Medical Center berhak mem-blacklist selama 1 tahun organisasi / himpunan / event yang merusak alat kesehatan / obat-obatan yang dipinjam.\n\n3. Apabila pihak pengaju terlambat mengembalikan alat kesehatan maupun obat-obatan, harap menginformasikan hal tersebut kepada pihak UMN Medical Center.\n\n4. Apabila pihak pengaju mengalami kesulitan dalam menggunakan alat-alat kesehatan atau obat-obatan. harap menanyakan kepada pihak UMN Medical Center.">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

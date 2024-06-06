@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Medic</string>
+    <string-array name="tipe_array">
+        <item>Jasa</item>
+        <item>Peralatan</item>
+    </string-array>
+</resources>
